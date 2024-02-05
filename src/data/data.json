@@ -1,0 +1,56 @@
+{
+    "postTitle": "Hello World",
+    "likes": 0,
+    "comments": [
+        {
+            "commentId": 1,
+            "commentText": "Nice post 🔥",
+            "commentLikes": 0,
+            "comments": [
+                {
+                    "commentId": 2,
+                    "commentText": "Nested Nice post 🔥",
+                    "commentLikes": 0,
+                    "comments": [{"commentId": 11,
+                    "commentText": "Nested Nice post 🔥",
+                    "commentLikes": 0,
+                    "comments": [{"commentId": 12,
+                    "commentText": "Nested Nice post 🔥",
+                    "commentLikes": 0,
+                    "comments": []}]}]
+                },
+                {
+                    "commentId": 3,
+                    "commentText": "Nested Nice post 2 🔥",
+                    "commentLikes": 0,
+                    "comments": [
+                        {
+                        "commentId": 4,
+                        "commentText": "Nested Nice post 3 🔥",
+                        "commentLikes": 0,
+                        "comments": []
+                        },
+                        {
+                            "commentId": 5,
+                            "commentText": "Nested Nice post 5 🔥",
+                            "commentLikes": 0,
+                            "comments": []
+                            }
+                    ]
+                }
+            ]
+        },
+        {
+            "commentId": 63,
+            "commentText": "Home post 🔥",
+            "commentLikes": 0,
+            "comments": []
+        },
+        {
+            "commentId": 65,
+            "commentText": "Home post 65 🔥",
+            "commentLikes": 0,
+            "comments": []
+        }
+    ]
+}

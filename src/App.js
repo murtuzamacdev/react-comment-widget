@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import './App.css';
-import commentData from './data.json';
+import commentData from './data/data.json';
 import AddCommentForm from './components/AddCommentForm';
 import { useNode } from './hooks/useNode.js';
 import Comments from './components/Comments';
+import Kanban from './components/Kanban/Kanban';
+import KanbanContextProvider from './context/kanban.context';
 
 function App() {
   const [data, setData] = useState(commentData)
@@ -33,9 +35,13 @@ function App() {
   
   return (
     <div className="App">
-      <AddCommentForm value={""} postComment={postComment} commentId={null} onCancel={() => {}}/>
-      <h4 className="font-bold mt-7 mb-1">Comments</h4>
-      <Comments commentsObj={data} isFirst={true} postComment={postComment} updateComment={updateComment} deleteComment={handleDelete} toggleLike={toggleLike}/>
+      <KanbanContextProvider>
+      <Kanban/>
+      </KanbanContextProvider>
+      
+      {/* <AddCommentForm value={""} postComment={postComment} commentId={null} onCancel={() => {}}/> */}
+      {/* <h4 className="font-bold mt-7 mb-1">Comments</h4> */}
+      {/* <Comments commentsObj={data} isFirst={true} postComment={postComment} updateComment={updateComment} deleteComment={handleDelete} toggleLike={toggleLike}/> */}
     </div>
   );
 }
