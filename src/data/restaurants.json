@@ -1,0 +1,73 @@
+{
+    "cuisine": [
+        {
+            "cId": 0,
+            "cName": "All"
+        },
+        {
+            "cId": 1,
+            "cName": "Indian"
+        },
+        {
+            "cId": 2,
+            "cName": "Chinese"
+        },
+        {
+            "cId": 3,
+            "cName": "Mexican"
+        }
+    ],
+    "restaurants": [
+        {
+            "resId": 1,
+            "resName": "Res 1",
+            "category": [ 1, 2 ],
+            "dishes": [
+                {
+                    "dishId": 1,
+                    "dishName": "Chicken Tikka",
+                    "dishPrice": 20
+                },
+                {
+                    "dishId": 2,
+                    "dishName": "Chicken Biryani",
+                    "dishPrice": 20
+                }
+            ]
+        },
+        {
+            "resId": 2,
+            "resName": "Res 2",
+            "category": [ 2, 3 ],
+            "dishes": [
+                {
+                    "dishId": 11,
+                    "dishName": "Taco",
+                    "dishPrice": 20
+                },
+                {
+                    "dishId": 22,
+                    "dishName": "Burrito",
+                    "dishPrice": 20
+                }
+            ]
+        },
+        {
+            "resId": 3,
+            "resName": "Res 3",
+            "category": [ 2, 3 ],
+            "dishes": [
+                {
+                    "dishId": 111,
+                    "dishName": "Noodles",
+                    "dishPrice": 20
+                },
+                {
+                    "dishId": 224,
+                    "dishName": "Momos",
+                    "dishPrice": 20
+                }
+            ]
+        }
+    ]
+}

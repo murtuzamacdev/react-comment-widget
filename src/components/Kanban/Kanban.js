@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import AddListForm from "./AddListForm";
 import List from "./List";
 import { createList } from '../../model/kanban'
-import KanbanContextProvider, {kanbanContext as kc} from "../../context/kanban.context";
+import {kanbanContext as kc} from "../../context/kanban.context";
 
 const Kanban = () => {
     const kanbanContext = useContext(kc)

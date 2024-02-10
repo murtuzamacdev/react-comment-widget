@@ -6,6 +6,8 @@ import { useNode } from './hooks/useNode.js';
 import Comments from './components/Comments';
 import Kanban from './components/Kanban/Kanban';
 import KanbanContextProvider from './context/kanban.context';
+import {FoodAppProvider} from './context/foodapp.context.js'
+import FoodApp from "./components/FoodApp/FoodApp.js";
 
 function App() {
   const [data, setData] = useState(commentData)
@@ -35,9 +37,14 @@ function App() {
   
   return (
     <div className="App">
-      <KanbanContextProvider>
+      <FoodAppProvider>
+        <FoodApp />
+      </FoodAppProvider>
+      
+
+      {/* <KanbanContextProvider>
       <Kanban/>
-      </KanbanContextProvider>
+      </KanbanContextProvider> */}
       
       {/* <AddCommentForm value={""} postComment={postComment} commentId={null} onCancel={() => {}}/> */}
       {/* <h4 className="font-bold mt-7 mb-1">Comments</h4> */}
