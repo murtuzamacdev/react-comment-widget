@@ -3,7 +3,6 @@ import { createContext, useReducer, useState } from "react";
 export const foodappContext = createContext();
 
 function cartReducer(state, action) {
-    console.log(state, action)
     if (action.type === 'ADD') {
         let cart = [...state];
         let index = cart.findIndex((item) => item.dishId === action.payload.dishId);
