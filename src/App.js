@@ -6,8 +6,10 @@ import { useNode } from './hooks/useNode.js';
 import Comments from './components/Comments';
 import Kanban from './components/Kanban/Kanban';
 import KanbanContextProvider from './context/kanban.context';
-import {FoodAppProvider} from './context/foodapp.context.js'
+import { FoodAppProvider } from './context/foodapp.context.js'
 import FoodApp from "./components/FoodApp/FoodApp.js";
+import Email from './components/Email/Email.js';
+import EmailContextProvider from './context/email.context.js';
 
 function App() {
   const [data, setData] = useState(commentData)
@@ -25,27 +27,34 @@ function App() {
     })
   }
 
-  function toggleLike(commentId, isLike){
+  function toggleLike(commentId, isLike) {
     likeComment(data, commentId, isLike, (updateData) => {
       setData({ ...updateData });
     })
   }
 
-  function handleDelete(commentId){
+  function handleDelete(commentId) {
     deleteComment(data, commentId, (updateData) => { setData({ ...updateData }); })
   }
-  
+
   return (
     <div className="App">
-      <FoodAppProvider>
+
+      <EmailContextProvider>
+        <Email />
+      </EmailContextProvider>
+
+
+
+      {/* <FoodAppProvider>
         <FoodApp />
-      </FoodAppProvider>
-      
+      </FoodAppProvider> */}
+
 
       {/* <KanbanContextProvider>
       <Kanban/>
       </KanbanContextProvider> */}
-      
+
       {/* <AddCommentForm value={""} postComment={postComment} commentId={null} onCancel={() => {}}/> */}
       {/* <h4 className="font-bold mt-7 mb-1">Comments</h4> */}
       {/* <Comments commentsObj={data} isFirst={true} postComment={postComment} updateComment={updateComment} deleteComment={handleDelete} toggleLike={toggleLike}/> */}

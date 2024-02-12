@@ -1,0 +1,86 @@
+{
+    "folders": [
+        {
+            "id": 1,
+            "name": "Inbox"
+        },
+        {
+            "id": 2,
+            "name": "Sent"
+        },
+        {
+            "id": 3,
+            "name": "Favorites"
+        },
+        {
+            "id": 4,
+            "name": "Deleted"
+        },
+        {
+            "id": 5,
+            "name": "Spam"
+        }
+    ],
+    "emails": [
+        {
+            "id": 1,
+            "subject": "Hello World 1",
+            "body": "Hello World 1 Body",
+            "from": "abc@gmail.com",
+            "to": "xyz@gmail.com",
+            "folder": [1],
+            "read": false,
+            "isFav": true
+        },
+        {
+            "id": 2,
+            "subject": "Hello World 2",
+            "body": "Hello World 1 Body",
+            "from": "abc@gmail.com",
+            "to": "xyz@gmail.com",
+            "folder": [1],
+            "read": false,
+            "isFav": false
+        },
+        {
+            "id": 3,
+            "subject": "Hello World 3",
+            "body": "Hello World 1 Body",
+            "from": "abc@gmail.com",
+            "to": "xyz@gmail.com",
+            "folder": [2],
+            "read": false,
+            "isFav": false
+        },
+        {
+            "id": 4,
+            "subject": "Hello World 4",
+            "body": "Hello World 1 Body",
+            "from": "abc@gmail.com",
+            "to": "xyz@gmail.com",
+            "folder": [4],
+            "read": false,
+            "isFav": false
+        },
+        {
+            "id": 5,
+            "subject": "Hello World 5",
+            "body": "Hello World 1 Body",
+            "from": "abc@gmail.com",
+            "to": "xyz@gmail.com",
+            "folder": [5],
+            "read": false,
+            "isFav": false
+        },
+        {
+            "id": 6,
+            "subject": "Hello World 6",
+            "body": "Hello World 1 Body",
+            "from": "abc@gmail.com",
+            "to": "xyz@gmail.com",
+            "folder": [1],
+            "read": false,
+            "isFav": false
+        }
+    ]
+}
